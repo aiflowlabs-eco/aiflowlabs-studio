@@ -1,8 +1,46 @@
-# --- Force GitHub to count TypeScript as main language ---
+# --- Normalize line endings (LF) for all text files
+* text=auto eol=lf
+
+# --- Always treat these as text
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.js     text eol=lf
+*.jsx    text eol=lf
+*.json   text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.html   text eol=lf
+
+# --- Windows-specific scripts
+*.cmd    text eol=crlf
+*.bat    text eol=crlf
+
+# --- Git metadata
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+.editorconfig  text eol=lf
+
+# --- Binary files
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.svg    binary
+*.mp4    binary
+*.mov    binary
+*.pdf    binary
+
+# --- GitHub linguist overrides
 *.ts linguist-detectable=true
 *.tsx linguist-detectable=true
 *.js linguist-detectable=false
 *.html linguist-detectable=false
 *.css linguist-detectable=false
 assets/** linguist-detectable=false
+
+# --- Husky hooks
 .husky/* text eol=lf
