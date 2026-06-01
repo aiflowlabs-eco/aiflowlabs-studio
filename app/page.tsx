@@ -16,7 +16,7 @@ export default function Home() {
 
       {/* Футер */}
       <footer className="tw-text-center tw-mt-[40px] tw-opacity-70">
-        © 2025 aiflowlabs.studio
+        © {new Date().getFullYear()} aiflowlabs.studio
       </footer>
     </main>
   );
