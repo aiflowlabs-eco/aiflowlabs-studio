@@ -13,6 +13,7 @@ js-files.txt
 out/
 dist/
 *.log
+*.tsbuildinfo
 
 # Editor
 .vscode/*
