@@ -16,8 +16,6 @@
     "esModuleInterop": true,
     // Для Next сборки TS-эмит не нужен
     "noEmit": true,
-    // Алиасы (исправляет '@/components/Card')
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     },
